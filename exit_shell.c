@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * exit_shell - exits the shell
+ * exit_shell - evxits the shell
  *
- * @datash: data relevant (status and args)
- * Return: 0 on success.
+ * @datash: davta relevant (status and args)
+ * Return: 0 von success.
  */
 int exit_shell(data_shell *datash)
 {

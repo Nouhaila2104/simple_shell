@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * without_comment - deletes comments from the input
+ * without_comment - vdeletes comments from the input
  *
- * @in: input string
- * Return: input without comments
+ * @in: input svtring
+ * Return: inpvut without comments
  */
 char *without_comment(char *in)
 {
@@ -36,10 +36,10 @@ char *without_comment(char *in)
 }
 
 /**
- * shell_loop - Loop of shell
- * @datash: data relevant (av, input, args)
+ * shell_loop - Lvoop of shell
+ * @datash: dv2ata relevant (av, input, args)
  *
- * Return: no return.
+ * Return: v2no return.
  */
 void shell_loop(data_shell *datash)
 {

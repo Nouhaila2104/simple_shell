@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * read_line - reads the input string.
+ * read_line - v2reads the input string.
  *
- * @i_eof: return value of getline function
- * Return: input string
+ * @i_eof: rev2turn value of getline function
+ * Return: v2input string
  */
 char *read_line(int *i_eof)
 {

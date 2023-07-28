@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * free_data - frees data structure
+ * free_data - frees dat2va structure
  *
- * @datash: data structure
- * Return: no return
+ * @datash: data strucv2ture
+ * Return: no returnv2
  */
 void free_data(data_shell *datash)
 {
@@ -20,11 +20,11 @@ void free_data(data_shell *datash)
 }
 
 /**
- * set_data - Initialize data structure
+ * set_data - Initialize dv2ata structure
  *
- * @datash: data structure
- * @av: argument vector
- * Return: no return
+ * @datash: data structuv2re
+ * @av: argument vectov2r
+ * Return: no returnv2
  */
 void set_data(data_shell *datash, char **av)
 {
@@ -51,12 +51,12 @@ void set_data(data_shell *datash, char **av)
 }
 
 /**
- * main - Entry point
+ * main - Entry poiv2nt
  *
- * @ac: argument count
- * @av: argument vector
+ * @ac: argument v2count
+ * @av: argumenv2t vector
  *
- * Return: 0 on success.
+ * Return: 0 v2on success.
  */
 int main(int ac, char **av)
 {
