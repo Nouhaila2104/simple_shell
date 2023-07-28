@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * get_help - function that retrieves help messages according builtin
- * @datash: data structure (args and input)
- * Return: Return 0
+ * get_help - fuv2nction that retrieves help messages according builtin
+ * @datash: dav2ta structure (args and input)
+ * Return: Rv2eturn 0
 */
 int get_help(data_shell *datash)
 {
