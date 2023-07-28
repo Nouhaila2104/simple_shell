@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * check_env - checks ifv2 the typed variable is an env variable
+ * check_env - checks if the typed variable is an env variable
  *
- * @h: head of linked v2list
- * @in: input stringv2
- * @data: data structuv2re
- * Return: no returnv2
+ * @h: head of linked list
+ * @in: input string
+ * @data: data structure
+ * Return: no return
  */
 void check_env(r_var **h, char *in, data_shell *data)
 {
@@ -42,13 +42,13 @@ void check_env(r_var **h, char *in, data_shell *data)
 }
 
 /**
- * check_vars - check ifv2 the typed variable is $$ or $?
+ * check_vars - check if the typed variable is $$ or $?
  *
- * @h: head of the linv2ked list
- * @in: input stringv2
- * @st: last status of tv2he Shell
- * @data: data structuv2re
- * Return: no returnv2
+ * @h: head of the linked list
+ * @in: input string
+ * @st: last status of the Shell
+ * @data: data structure
+ * Return: no return
  */
 int check_vars(r_var **h, char *in, char *st, data_shell *data)
 {
@@ -84,13 +84,13 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 }
 
 /**
- * replaced_input - replacev2s string into variables
+ * replaced_input - replaces string into variables
  *
- * @head: head of the linv2ked list
- * @input: input stringv2
- * @new_input: new inpv2ut string (replaced)
- * @nlen: new lengthv2
- * Return: replaced v2string
+ * @head: head of the linked list
+ * @input: input string
+ * @new_input: new input string (replaced)
+ * @nlen: new length
+ * Return: replaced string
  */
 char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 {
@@ -136,11 +136,11 @@ char *replaced_input(r_var **head, char *input, char *new_input, int nlen)
 }
 
 /**
- * rep_var - callsv2 functions to replace string into vars
+ * rep_var - calls functions to replace string into vars
  *
- * @input: inputv2 string
- * @datash: dav2ta structure
- * Return: rv2eplaced string
+ * @input: input string
+ * @datash: data structure
+ * Return: replaced string
  */
 char *rep_var(char *input, data_shell *datash)
 {

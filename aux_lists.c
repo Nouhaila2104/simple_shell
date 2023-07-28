@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * add_sep_node_end - addvs a separator found at the end
+ * add_sep_node_end - adds a separator found at the end
  * of a sep_list.
- * @head: head of the livnked list.
- * @sep: separator founvd (; | &).
- * Return: address of vthe head.
+ * @head: head of the linked list.
+ * @sep: separator found (; | &).
+ * Return: address of the head.
  */
 sep_list *add_sep_node_end(sep_list **head, char sep)
 {
@@ -34,9 +34,9 @@ sep_list *add_sep_node_end(sep_list **head, char sep)
 }
 
 /**
- * free_sep_list - frvees a sep_list
- * @head: head of thve linked list.
- * Return: no returvn.
+ * free_sep_list - frees a sep_list
+ * @head: head of the linked list.
+ * Return: no return.
  */
 void free_sep_list(sep_list **head)
 {
@@ -56,11 +56,11 @@ void free_sep_list(sep_list **head)
 }
 
 /**
- * add_line_node_end - advds a command line at the end
+ * add_line_node_end - adds a command line at the end
  * of a line_list.
- * @head: head of the lv2inked list.
- * @line: command linv2e.
- * Return: address of tv2he head.
+ * @head: head of the linked list.
+ * @line: command line.
+ * Return: address of the head.
  */
 line_list *add_line_node_end(line_list **head, char *line)
 {
@@ -89,9 +89,9 @@ line_list *add_line_node_end(line_list **head, char *line)
 }
 
 /**
- * free_line_list - fv2rees a line_list
- * @head: head v2of the linked list.
- * Return: no retv2urn.
+ * free_line_list - frees a line_list
+ * @head: head of the linked list.
+ * Return: no return.
  */
 void free_line_list(line_list **head)
 {

@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * repeated_char - vcounts the repetitions of a char
+ * repeated_char - counts the repetitions of a char
  *
- * @input: inpuv2t string
- * @i: indexvv2
- * Return: repetv2itions
+ * @input: input string
+ * @i: index
+ * Return: repetitions
  */
 int repeated_char(char *input, int i)
 {
@@ -18,11 +18,11 @@ int repeated_char(char *input, int i)
 /**
  * error_sep_op - finds syntax errors
  *
- * @input: inpv2ut string
- * @i: indexv2
- * @last: lastv2 char read
- * Return: iv2ndex of error. 0 when there are no
- * errorS
+ * @input: input string
+ * @i: index
+ * @last: last char read
+ * Return: index of error. 0 when there are no
+ * errors
  */
 int error_sep_op(char *input, int i, char last)
 {
@@ -71,9 +71,9 @@ int error_sep_op(char *input, int i, char last)
 /**
  * first_char - finds index of the first char
  *
- * @input: inpv2ut string
- * @i: indexv2
- * Return: 1 if there is anv2 error. 0 in other case.
+ * @input: input string
+ * @i: index
+ * Return: 1 if there is an error. 0 in other case.
  */
 int first_char(char *input, int *i)
 {
@@ -95,11 +95,11 @@ int first_char(char *input, int *i)
 /**
  * print_syntax_error - prints when a syntax error is found
  *
- * @datash: data structurv2e
- * @input: input stringv2
- * @i: index of the errov2r
- * @bool: to control mv2sg error
- * Return: no returnv2
+ * @datash: data structure
+ * @input: input string
+ * @i: index of the error
+ * @bool: to control msg error
+ * Return: no return
  */
 void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 {
@@ -149,9 +149,9 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
  * check_syntax_error - intermediate function to
  * find and print a syntax error
  *
- * @datash: data stv2ructure
- * @input: input v2string
- * Return: 1 ifv2 there is an error. 0 in other case
+ * @datash: data structure
+ * @input: input string
+ * Return: 1 if there is an error. 0 in other case
  */
 int check_syntax_error(data_shell *datash, char *input)
 {
@@ -174,4 +174,4 @@ int check_syntax_error(data_shell *datash, char *input)
 	}
 
 	return (0);
-g
+}

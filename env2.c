@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * copy_info - copives info to create
- * a new env or alvias
- * @name: name (evnv or alias)
- * @value: valuev (env or alias)
+ * copy_info - copies info to create
+ * a new env or alias
+ * @name: name (env or alias)
+ * @value: value (env or alias)
  *
- * Return: new env or alivas.
+ * Return: new env or alias.
  */
 char *copy_info(char *name, char *value)
 {
@@ -26,12 +26,12 @@ char *copy_info(char *name, char *value)
 }
 
 /**
- * set_env - sets an envvironment variable
+ * set_env - sets an environment variable
  *
- * @name: name of the evnvironment variable
- * @value: value of thve environment variable
- * @datash: data struvcture (environ)
- * Return: no returnv
+ * @name: name of the environment variable
+ * @value: value of the environment variable
+ * @datash: data structure (environ)
+ * Return: no return
  */
 void set_env(char *name, char *value, data_shell *datash)
 {
@@ -58,11 +58,11 @@ void set_env(char *name, char *value, data_shell *datash)
 }
 
 /**
- * _setenv - compares envv variables names
- * with the name passedv.
- * @datash: data relevvant (env name and env value)
+ * _setenv - compares env variables names
+ * with the name passed.
+ * @datash: data relevant (env name and env value)
  *
- * Return: 1 on succevss.
+ * Return: 1 on success.
  */
 int _setenv(data_shell *datash)
 {
@@ -79,11 +79,11 @@ int _setenv(data_shell *datash)
 }
 
 /**
- * _unsetenv - delev2tes a environment variable
+ * _unsetenv - deletes a environment variable
  *
- * @datash: data v2relevant (env name)
+ * @datash: data relevant (env name)
  *
- * Return: 1 onv2 success.
+ * Return: 1 on success.
  */
 int _unsetenv(data_shell *datash)
 {

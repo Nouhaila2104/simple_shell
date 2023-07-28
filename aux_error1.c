@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * strcat_cd - function tvhat concatenates the message for cd error
+ * strcat_cd - function that concatenates the message for cd error
  *
- * @datash: data relevanvt (directory)
- * @msg: message to printv
- * @error: output messagev
- * @ver_str: counter linvves
- * Return: error messagve
+ * @datash: data relevant (directory)
+ * @msg: message to print
+ * @error: output message
+ * @ver_str: counter lines
+ * Return: error message
  */
 char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 {
@@ -39,9 +39,9 @@ char *strcat_cd(data_shell *datash, char *msg, char *error, char *ver_str)
 }
 
 /**
- * error_get_cd - error mvessage for cd command in get_cd
- * @datash: data relevanvt (directory)
- * Return: Error messagve
+ * error_get_cd - error message for cd command in get_cd
+ * @datash: data relevant (directory)
+ * Return: Error message
  */
 char *error_get_cd(data_shell *datash)
 {
@@ -78,9 +78,9 @@ char *error_get_cd(data_shell *datash)
 }
 
 /**
- * error_not_found - generv2ic error message for command not found
- * @datash: data relevantv (counter, arguments)
- * Return: Error messagv2e
+ * error_not_found - generic error message for command not found
+ * @datash: data relevant (counter, arguments)
+ * Return: Error message
  */
 char *error_not_found(data_shell *datash)
 {
@@ -110,10 +110,10 @@ char *error_not_found(data_shell *datash)
 }
 
 /**
- * error_exit_shell - generic ev2rror message for exit in get_exit
- * @datash: datv2a relevant (counter, arguments)
+ * error_exit_shell - generic error message for exit in get_exit
+ * @datash: data relevant (counter, arguments)
  *
- * Return: Erv2ror message
+ * Return: Error message
  */
 char *error_exit_shell(data_shell *datash)
 {

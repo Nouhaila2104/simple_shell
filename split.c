@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * swap_char - swaps | avnd & for non-printed chars
+ * swap_char - swaps | and & for non-printed chars
  *
- * @input: input stringv
- * @bool: type of swapv
- * Return: swapped stringv
+ * @input: input string
+ * @bool: type of swap
+ * Return: swapped string
  */
 char *swap_char(char *input, int bool)
 {
@@ -44,12 +44,12 @@ char *swap_char(char *input, int bool)
 }
 
 /**
- * add_nodes - add separvators and command lines in the lists
+ * add_nodes - add separators and command lines in the lists
  *
- * @head_s: head of sepvarator list
- * @head_l: head of covmmand lines list
- * @input: input strivng
- * Return: no returnv
+ * @head_s: head of separator list
+ * @head_l: head of command lines list
+ * @input: input string
+ * Return: no return
  */
 void add_nodes(sep_list **head_s, line_list **head_l, char *input)
 {
@@ -80,12 +80,12 @@ void add_nodes(sep_list **head_s, line_list **head_l, char *input)
 }
 
 /**
- * go_next - go to the nvext command line stored
+ * go_next - go to the next command line stored
  *
- * @list_s: separator lvist
- * @list_l: command livne list
- * @datash: data struvcture
- * Return: no returnv
+ * @list_s: separator list
+ * @list_l: command line list
+ * @datash: data structure
+ * Return: no return
  */
 void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
 {
@@ -122,12 +122,12 @@ void go_next(sep_list **list_s, line_list **list_l, data_shell *datash)
 }
 
 /**
- * split_commands - splitvs command lines according to
- * the separators ;, | avnd &, and executes them
+ * split_commands - splits command lines according to
+ * the separators ;, | and &, and executes them
  *
- * @datash: data struvcture
- * @input: input strving
- * Return: 0 to exivt, 1 to continue
+ * @datash: data structure
+ * @input: input string
+ * Return: 0 to exit, 1 to continue
  */
 int split_commands(data_shell *datash, char *input)
 {
@@ -169,10 +169,10 @@ int split_commands(data_shell *datash, char *input)
 }
 
 /**
- * split_line - tv2okenizes the input string
+ * split_line - tokenizes the input string
  *
- * @input: inpuv2t string.
- * Return: stv2ring splitted.
+ * @input: input string.
+ * Return: string splitted.
  */
 char **split_line(char *input)
 {

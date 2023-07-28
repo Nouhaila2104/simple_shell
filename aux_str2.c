@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _strdup - duplicavtes a str in the heap memory.
- * @s: Type char povinter str
- * Return: duplicavted str
+ * _strdup - duplicates a str in the heap memory.
+ * @s: Type char pointer str
+ * Return: duplicated str
  */
 char *_strdup(const char *s)
 {
@@ -19,9 +19,9 @@ char *_strdup(const char *s)
 }
 
 /**
- * _strlen - Retuvrns the lenght of a string.
- * @s: Type charv pointer
- * Return: Alwavys 0.
+ * _strlen - Returns the lenght of a string.
+ * @s: Type char pointer
+ * Return: Always 0.
  */
 int _strlen(const char *s)
 {
@@ -35,10 +35,10 @@ int _strlen(const char *s)
 
 /**
  * cmp_chars - compare chars of strings
- * @str: input strinvg.
- * @delim: delimitevr.
+ * @str: input string.
+ * @delim: delimiter.
  *
- * Return: 1 if arev equals, 0 if not.
+ * Return: 1 if are equals, 0 if not.
  */
 int cmp_chars(char str[], const char *delim)
 {
@@ -62,10 +62,10 @@ int cmp_chars(char str[], const char *delim)
 
 /**
  * _strtok - splits a string by some delimiter.
- * @str: input strving.
- * @delim: delimivter.
+ * @str: input string.
+ * @delim: delimiter.
  *
- * Return: string splitved.
+ * Return: string splited.
  */
 char *_strtok(char str[], const char *delim)
 {
@@ -77,9 +77,9 @@ char *_strtok(char str[], const char *delim)
 	{
 		if (cmp_chars(str, delim))
 			return (NULL);
-		splitted = str; /*Store vfirst address*/
+		splitted = str; /*Store first address*/
 		i = _strlen(str);
-		str_end = &str[i]; /*Stvore last address*/
+		str_end = &str[i]; /*Store last address*/
 	}
 	str_start = splitted;
 	if (str_start == str_end) /*Reaching the end*/
@@ -87,11 +87,11 @@ char *_strtok(char str[], const char *delim)
 
 	for (bool = 0; *splitted; splitted++)
 	{
-		/*Brveaking loop finding the next token*/
+		/*Breaking loop finding the next token*/
 		if (splitted != str_start)
 			if (*splitted && *(splitted - 1) == '\0')
 				break;
-		/*Rveplacing delimiter for null char*/
+		/*Replacing delimiter for null char*/
 		for (i = 0; delim[i]; i++)
 		{
 			if (*splitted == delim[i])
@@ -111,10 +111,10 @@ char *_strtok(char str[], const char *delim)
 }
 
 /**
- * _isdigit - defivnes if string passed is a number
+ * _isdigit - defines if string passed is a number
  *
- * @s: input strivng
- * Return: 1 if vstring is a number. 0 in other case.
+ * @s: input string
+ * Return: 1 if string is a number. 0 in other case.
  */
 int _isdigit(const char *s)
 {
